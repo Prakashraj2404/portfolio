@@ -56,7 +56,24 @@
 .home-cont .grey-txt-bold{
     color: rgb(102, 102, 102);
 }
-
+.home-cont .grey-txt-bold::after{
+    content: "Developer";
+    animation: letter 5s infinite linear alternate;
+}
+@keyframes letter {
+    0%{content: "Developer|";}
+    10%{content: "Develop|";}
+    20%{content: "Develo|";}
+    26%{content: "Devel|";}
+    32%{content:"Devel|";}
+    40%{content: "Deve|";}
+    50%{content:"Dev|";}
+    65%{content: "Des|";}
+    71%{content: "Desi|";}
+    79%{content: "Design|";}
+    85%{content: "Designe|";}
+    100%{content: "Designer|";}
+}
 .home-p{
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -120,14 +137,18 @@
         min-height: 20vh;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .me{
         border-radius: 50%;
         margin: auto;
-        position: unset;
         width: 300px;
         height: 300px;
+        top: 50%;
+        left: 50%;
+        border: 6px solid white;
+        transform: translate(-50%, -50%);
     }
 
     .home-clip{
@@ -137,6 +158,32 @@
     .home-p{
         font-size: 18px;
     }
+    .circle {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        /* background-color: black; */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .rotate {
+        width: 150px;
+        height: 450px;
+        background-color: red;
+        animation: rotate 4s infinite linear;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -144,9 +191,31 @@
         width: 250px;
         height: 250px;
     }
+    .circle {
+        width: 260px;
+        height: 260px;
+    }
 
     .home-p{
         line-height: 27px;
         font-size: 15px;
+    }
+    .content {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        transform: translate(-50%, -50%);
+    }
+    .circle:hover > .content {
+        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
