@@ -117,7 +117,7 @@
 
     .home-cont,.home-img{
         width: 100%;
-        min-height: 50vh;
+        min-height: 20vh;
         text-align: center;
         align-items: center;
     }
