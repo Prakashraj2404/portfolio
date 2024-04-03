@@ -200,22 +200,4 @@
         line-height: 27px;
         font-size: 15px;
     }
-    .content {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-        position: absolute;
-        display: none;
-        top: 50%;
-        left: 50%;
-        background-color: white;
-        transform: translate(-50%, -50%);
-    }
-    .circle:hover > .content {
-        display: block;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
 }

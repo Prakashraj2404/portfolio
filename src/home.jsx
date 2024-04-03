@@ -14,11 +14,6 @@ export default class Home extends React.Component{
                     <div className="circle">
                         <div className="rotate"></div>
                         <img src={Prakash} className="me"/>
-                        <div className="content">
-                            <h5>PRAKASH</h5>
-                            <p>Web Developer</p>
-                            <button>CONTACT</button>
-                        </div>
                     </div>
                 </div>
 
