@@ -2,6 +2,7 @@ import React from "react";
 import './css/about.css';
 import { FaDownload } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
+import resume from "./accests/Resume.pdf";
 
 export default class About extends React.Component {
     render() {
@@ -20,7 +21,7 @@ export default class About extends React.Component {
                             <p>Address : <span>Krishnagiri, 635-104</span></p>
                             <p>phone : <span>+91 94894-02877</span></p>
                             <p>E-mail : <span>prakashmadhaiyan02@gmail.com</span></p>
-                            <a><button className="home-button abtbtn">Download CV <a><FaDownload /></a></button></a>
+                            <a href={resume} download><button className="home-button abtbtn">Download CV <a><FaDownload /></a></button></a>
                         </div>
 
                         <div className="info">
@@ -29,7 +30,7 @@ export default class About extends React.Component {
                             <p>Experience : <span>Fresher</span></p>
                             <p>Languages : <span>English,Telugu,Tamil</span></p>
                         </div>
-                        
+
                     </section>
 
                     <section className="about-boxes">
@@ -47,12 +48,12 @@ export default class About extends React.Component {
                             <h1>60+</h1>
                             <p>Positive Reviews</p>
                         </div>
-                        
+
                     </section>
                 </div>
 
 
-                <hr className="line"/>
+                <hr className="line" />
 
                 <div className="skills">
                     <section className="prog">
@@ -78,11 +79,11 @@ export default class About extends React.Component {
                     <section className="prog">
                         <p>React<span> 85%</span></p>
                         <progress value="85" max="100" className="prog-all prog-react"></progress>
-                    </section>                   
+                    </section>
                 </div>
 
 
-                <hr className="line"/>
+                <hr className="line" />
 
 
                 <div className="education">
@@ -90,28 +91,28 @@ export default class About extends React.Component {
                         <p>2024-PRESENT</p>
                         <p>web developer <span>- Login 360</span></p>
                         <p>I designed some frond-end templates. And I workded with CSS and Bootstrap for designing UI. Then I am also worked in frond-end frameworks like React Js. I have done some API integration in small Projects.</p>
-                        <FaGraduationCap className="grad-cap"/>
+                        <FaGraduationCap className="grad-cap" />
                     </div>
 
                     <div className="edu-details">
                         <p>2019 - 2023</p>
                         <p>B.Tech (IT) <span>- SKCET</span></p>
                         <p>I Completed B.Tech - Information Technology, at Sri Krishna college of Engineering and tehnology,Coimbatore.With 7.53 CGPA </p>
-                        <FaGraduationCap className="grad-cap"/>
+                        <FaGraduationCap className="grad-cap" />
                     </div>
 
                     <div className="edu-details">
                         <p>2018 - 2019</p>
                         <p>HSE <span>- VMHSS</span></p>
                         <p> I Completed Higher Secondary Education at Vailankanni Matric Higher Seondary School, Bargur, with the percentage of 56.4 </p>
-                        <FaGraduationCap className="grad-cap"/>
+                        <FaGraduationCap className="grad-cap" />
                     </div>
 
                     <div className="edu-details">
                         <p>2016 - 2017</p>
                         <p>SSLC <span>- KMHSS</span></p>
                         <p> I Completed Secondary School Leaving Certificate at Kanakadasa Matric Higher Seondary School, Bargur, with the percentage of 88.4 </p>
-                        <FaGraduationCap className="grad-cap"/>
+                        <FaGraduationCap className="grad-cap" />
                     </div>
 
 

@@ -7,8 +7,30 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_fikfrsd', 'template_mqrix25', form.current, {
+        publicKey: '7pEh6v6GdpXjcr9HZ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
     return (
         <div className="contact-cont">
             <div className='port-header'>
@@ -46,14 +68,14 @@ export default function Contact() {
 
 
                 <section className='contact-input'>
-                    <form>
+                    <form  ref={form} onSubmit={sendEmail}>
 
                         <div className='first-row-input'>
-                            <input type='text' placeholder='YOUR NAME' required/>
-                            <input type='email' placeholder='YOUR EMAIL' required/>
+                            <input type='text' placeholder='YOUR NAME' name="from_name" required/>
+                            <input type='email' placeholder='YOUR EMAIL' name="from_mail" required/>
                             <input type='text' placeholder='YOUR SUBJECT' required/>
                         </div>
-                        <textarea className='text-area' cols={100} rows={10} placeholder='YOUR MESSAGE'></textarea>
+                        <textarea className='text-area' name="message" cols={100} rows={10} placeholder='YOUR MESSAGE'></textarea>
                         <button className="home-button" type='submit'>send message <a><FaTelegramPlane /></a></button>
 
                     </form>
