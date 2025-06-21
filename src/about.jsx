@@ -2,7 +2,7 @@ import React from "react";
 import './css/about.css';
 import { FaDownload } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
-import resume from "./accests/Resume.pdf";
+import resume from "./assets/Prakash_Raj.pdf";
 
 export default class About extends React.Component {
     render() {
@@ -40,12 +40,12 @@ export default class About extends React.Component {
                         </div>
 
                         <div className="box box2">
-                            <h1>6+</h1>
+                            <h1>15+</h1>
                             <p>Projects Completed</p>
                         </div>
 
                         <div className="box box3">
-                            <h1>60+</h1>
+                            <h1>100+</h1>
                             <p>Positive Reviews</p>
                         </div>
 
@@ -57,18 +57,8 @@ export default class About extends React.Component {
 
                 <div className="skills">
                     <section className="prog">
-                        <p>HTML<span> 95%</span></p>
+                        <p>HTML & CSS<span> 95%</span></p>
                         <progress value="95" max="100" className="prog-all prog-html"></progress>
-                    </section>
-
-                    <section className="prog">
-                        <p>CSS<span> 93%</span></p>
-                        <progress value="93" max="100" className="prog-all prog-css"></progress>
-                    </section>
-
-                    <section className="prog">
-                        <p>Bootstrap<span> 98%</span></p>
-                        <progress value="98" max="100" className="prog-all prog-bootstrap"></progress>
                     </section>
 
                     <section className="prog">
@@ -79,6 +69,21 @@ export default class About extends React.Component {
                     <section className="prog">
                         <p>React<span> 85%</span></p>
                         <progress value="85" max="100" className="prog-all prog-react"></progress>
+                    </section>
+
+                    <section className="prog">
+                        <p>Node.Js<span> 65%</span></p>
+                        <progress value="65" max="100" className="prog-all prog-node"></progress>
+                    </section>
+
+                    <section className="prog">
+                        <p>Mongo DB<span> 75%</span></p>
+                        <progress value="75" max="100" className="prog-all prog-mongo"></progress>
+                    </section>
+
+                    <section className="prog">
+                        <p>Bootstrap<span> 98%</span></p>
+                        <progress value="98" max="100" className="prog-all prog-bootstrap"></progress>
                     </section>
                 </div>
 

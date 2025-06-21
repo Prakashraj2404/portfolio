@@ -1,15 +1,15 @@
 import React from "react";
 import './css/blog.css';
-import Blog1 from './accests/project-6.jpg';
-import Blog2 from './accests/project-2.jpg';
-import Blog3 from './accests/project-7.jpg';
+import Blog1 from './assets/project-6.jpg';
+import Blog2 from './assets/project-2.jpg';
+import Blog3 from './assets/project-7.jpg';
 
 // import Blog1 from "./assets/blog1.jpg";
 // import Blog2 from "./assets/blog2.jpg";
 // import Blog3 from "./assets/blog3.jpg";
-import Blog4 from "./accests/blog4.jpg";
-import Blog5 from "./accests/blog5.jpg";
-import Blog6 from "./accests/blog6.jpg";
+import Blog4 from "./assets/blog4.jpg";
+import Blog5 from "./assets/blog5.jpg";
+import Blog6 from "./assets/blog6.jpg";
 import { IoToday } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { FaLink } from "react-icons/fa";

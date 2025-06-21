@@ -25,15 +25,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .info span{
     font-weight: bold;
     color: rgb(102, 102, 102);
@@ -122,14 +113,6 @@ progress{
     background-color: red;
 }
 
-.prog-css::-webkit-progress-value{
-    background-color: rgb(82, 82, 255);
-}
-
-.prog-bootstrap::-webkit-progress-value{
-    background-color: rgb(57, 57, 57);
-}
-
 .prog-js::-webkit-progress-value{
     background-color: rgb(255, 221, 0);
 }
@@ -137,6 +120,15 @@ progress{
 .prog-react::-webkit-progress-value{
     background-color: lightskyblue;
 }
+
+.prog-node::-webkit-progress-value{
+    background-color: rgb(82, 82, 255);
+}
+
+.prog-bootstrap::-webkit-progress-value{
+    background-color: rgb(57, 57, 57);
+}
+
 
 .education{
     display: flex;
