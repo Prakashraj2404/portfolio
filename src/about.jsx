@@ -92,8 +92,16 @@ export default class About extends React.Component {
 
 
                 <div className="education">
+
                     <div className="edu-details">
-                        <p>2024-PRESENT</p>
+                        <p>2025 - Present</p>
+                        <p>Junior Software developer <span>- Yoho Technologies</span></p>
+                        <p>I am currently working as a Junior Software Developer at Yoho Technologies, Chennai. I am working on various projects, focusing on both front-end and back-end development. My role involves collaborating with the team to design and implement software solutions that meet client requirements.</p>
+                        <FaGraduationCap className="grad-cap" />
+                    </div>
+
+                    <div className="edu-details">
+                        <p>2024</p>
                         <p>web developer <span>- Login 360</span></p>
                         <p>I designed some frond-end templates. And I workded with CSS and Bootstrap for designing UI. Then I am also worked in frond-end frameworks like React Js. I have done some API integration in small Projects.</p>
                         <FaGraduationCap className="grad-cap" />

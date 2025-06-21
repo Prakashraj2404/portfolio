@@ -84,7 +84,7 @@
 }
 
 .prog{
-    width: 850px;
+    width: 950px;
     text-align: center;
     margin: auto;
 }
@@ -132,7 +132,7 @@ progress{
 
 .education{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     gap:50px;
     padding:50px;
     flex-wrap: wrap;
