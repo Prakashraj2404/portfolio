@@ -1,14 +1,14 @@
 import './css/portfolio.css';
 
-import portfolio from './accests/portfolio project.png';
-import project1 from './accests/restaurent project.png';
-import project2 from './accests/bootstrap project.png';
-import project3 from './accests/project-2.jpg';
-import project4 from './accests/petstore project.png';
-import project5 from './accests/project-5.jpg';
-import project6 from './accests/project-6.jpg';
-import project7 from './accests/project-7.jpg';
-import project8 from './accests/project-8.jpg';
+import portfolio from './assets/portfolio project.png';
+import project1 from './assets/restaurent project.png';
+import project2 from './assets/bootstrap project.png';
+import project3 from './assets/project-2.jpg';
+import project4 from './assets/petstore project.png';
+import project5 from './assets/project-5.jpg';
+import project6 from './assets/project-6.jpg';
+import project7 from './assets/project-7.jpg';
+import project8 from './assets/project-8.jpg';
 
 
 export default function Portfolio(){
